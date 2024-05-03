@@ -296,7 +296,7 @@ const menuData = [
     id: 5,
     title: "Investor",
     newTab: false,
-    path: "/news",
+    path: "/investor",
   },
   {
     id: 6,
@@ -314,7 +314,7 @@ const menuData = [
     id: 8,
     title: "Contact Us",
     newTab: false,
-    path: "/news",
+    path: "/contact",
   },
 ];
 export default menuData;

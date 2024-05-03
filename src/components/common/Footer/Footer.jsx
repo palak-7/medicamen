@@ -61,8 +61,8 @@ const Footer = () => {
                         y2="14.3286"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#7C3AED" />
-                        <stop offset="0.993738" stop-color="#4F46E5" />
+                        <stop stopColor="#7C3AED" />
+                        <stop offset="0.993738" stopColor="#4F46E5" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -90,8 +90,8 @@ const Footer = () => {
                         y2="11.4629"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#7C3AED" />
-                        <stop offset="0.993738" stop-color="#4F46E5" />
+                        <stop stopColor="#7C3AED" />
+                        <stop offset="0.993738" stopColor="#4F46E5" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -107,8 +107,8 @@ const Footer = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M13.4346 1.0181C14.0684 1.18926 14.5665 1.68869 14.7349 2.32177C15.0413 3.47069 15.0413 5.86935 15.0413 5.86935C15.0413 5.86935 15.0413 8.26801 14.7349 9.41693C14.5642 10.0524 14.0661 10.5518 13.4346 10.7206C12.2886 11.0278 7.69058 11.0278 7.69058 11.0278C7.69058 11.0278 3.09491 11.0278 1.94657 10.7206C1.31277 10.5494 0.814613 10.05 0.646222 9.41693C0.339844 8.26801 0.339844 5.86935 0.339844 5.86935C0.339844 5.86935 0.339844 3.47069 0.646222 2.32177C0.816952 1.68635 1.31511 1.18692 1.94657 1.0181C3.09491 0.710938 7.69058 0.710938 7.69058 0.710938C7.69058 0.710938 12.2886 0.710938 13.4346 1.0181ZM10.041 5.86935L6.22178 8.08043V3.65827L10.041 5.86935Z"
                       fill="url(#paint0_linear_9147_18425)"
                     />
@@ -121,8 +121,8 @@ const Footer = () => {
                         y2="14.2671"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#7C3AED" />
-                        <stop offset="0.993738" stop-color="#4F46E5" />
+                        <stop stopColor="#7C3AED" />
+                        <stop offset="0.993738" stopColor="#4F46E5" />
                       </linearGradient>
                     </defs>
                   </svg>

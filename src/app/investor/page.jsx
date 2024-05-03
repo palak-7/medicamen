@@ -1,9 +1,10 @@
 import React from "react";
-import Contact from "./Contact";
+import Investor from "./Investor";
+
 const page = () => {
   return (
     <div>
-      <Contact />
+      <Investor />
     </div>
   );
 };
