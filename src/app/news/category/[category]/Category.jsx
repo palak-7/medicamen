@@ -7,9 +7,10 @@ import { SlCalender } from "react-icons/sl";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import Link from "next/link";
-
-const News = () => {
+const Category = ({ cat }) => {
   const [news, setNews] = useState([]);
+  const [category, setCategory] = useState([]);
+
   useEffect(() => {
     async function getAllNews() {
       const result = await getNews();
@@ -21,16 +22,16 @@ const News = () => {
     }
     getAllNews();
   }, []);
+
+  useEffect(() => {
+    const filteredItems = news.filter((item) => item.category === cat);
+    setCategory(filteredItems);
+  }, [cat, news]);
   return (
-    <div>
-      <h1 className="font-bold text-4xl font-serif text-center mt-10">
-        Latest News
-      </h1>
-      <p className="text-center font-semibold font-serif mt-1">
-        All our latest news are listed below
-      </p>
-      <div className="grid grid-cols-3 gap-x-5 mx-4">
-        {news.map((n) => (
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+      <h1 className="font-bold text-3xl text-center m-5">{cat}</h1>
+      <div className="grid grid-cols-3 gap-x-5 mx-20">
+        {category.map((n) => (
           <div
             key={n.id}
             className="border-gray-400 border mt-4 shadow-xl hover:scale-105"
@@ -69,4 +70,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Category;

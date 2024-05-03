@@ -7,9 +7,9 @@ import { SlCalender } from "react-icons/sl";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import Link from "next/link";
-
 const News = () => {
   const [news, setNews] = useState([]);
+
   useEffect(() => {
     async function getAllNews() {
       const result = await getNews();
@@ -22,14 +22,11 @@ const News = () => {
     getAllNews();
   }, []);
   return (
-    <div>
-      <h1 className="font-bold text-4xl font-serif text-center mt-10">
-        Latest News
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+      <h1 className="font-bold text-3xl text-center m-5">
+        Check Out the latest News
       </h1>
-      <p className="text-center font-semibold font-serif mt-1">
-        All our latest news are listed below
-      </p>
-      <div className="grid grid-cols-3 gap-x-5 mx-4">
+      <div className="grid grid-cols-3 gap-x-5 mx-20">
         {news.map((n) => (
           <div
             key={n.id}
