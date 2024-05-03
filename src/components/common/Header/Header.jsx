@@ -29,6 +29,8 @@ const Header = () => {
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
+  const [openSubIndex, setSubOpenIndex] = useState(-1);
+
   const handleSubmenu = (index) => {
     if (openIndex === index) {
       setOpenIndex(-1);
@@ -36,11 +38,17 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
-
+  const handleSubSubmenu = (index) => {
+    if (openSubIndex === index) {
+      setSubOpenIndex(-1);
+    } else {
+      setSubOpenIndex(index);
+    }
+  };
   const usePathName = usePathname();
   return (
     <div
-      className={`header left-0 z-40 top-0 w-full items-center  bg-gradient-to-r font-semibold from-white to-secondary ${
+      className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center  bg-gradient-to-r font-semibold from-white to-secondary ${
         sticky
           ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent"
@@ -102,40 +110,26 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:space-x-4">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative flex">
-                        <Link
-                          href={menuItem.path}
-                          className={`flex py-2 text-lg lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                            usePathName === menuItem.path
-                              ? "text-[#321f05]"
-                              : "text-dark hover:text-[#321f05]"
-                          }`}
-                        >
-                          {menuItem.title}
-                        </Link>
-                        {menuItem.submenu && (
+                      <li key={index} className="group relative">
+                        {menuItem.path ? (
+                          <Link
+                            href={menuItem.path}
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                              usePathName === menuItem.path
+                                ? "text-primary"
+                                : "text-dark hover:text-primary"
+                            }`}
+                          >
+                            {menuItem.title}
+                          </Link>
+                        ) : (
                           <>
-                            <div
-                              className={`submenu relative left-2 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                                openIndex === index ? "block" : "hidden"
-                              }`}
-                            >
-                              {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-[#321f05] dark:text-white/70 dark:hover:text-white lg:px-3"
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
-                            </div>
-                            {/* open submenu button */}
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between text-lg text-dark group-hover:text-[#321f05] dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-1"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
-                              <span className="">
+                              {menuItem.title}
+                              <span className="pl-3">
                                 <svg width="25" height="24" viewBox="0 0 25 24">
                                   <path
                                     fillRule="evenodd"
@@ -146,6 +140,67 @@ const Header = () => {
                                 </svg>
                               </span>
                             </p>
+                            <div
+                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                                openIndex === index ? "block" : "hidden"
+                              }`}
+                            >
+                              {menuItem.submenu.map((submenuItem, index) => (
+                                <div key={index} className="group relative">
+                                  {submenuItem.path ? (
+                                    <Link
+                                      href={submenuItem.path}
+                                      key={index}
+                                      className="block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3"
+                                    >
+                                      {submenuItem.title}
+                                    </Link>
+                                  ) : (
+                                    <>
+                                      <p
+                                        onClick={() => handleSubSubmenu(index)}
+                                        className="rounded py-2.5 text-sm lg:px-3 flex cursor-pointer items-center justify-between text-dark hover:text-primary"
+                                      >
+                                        {submenuItem.title}
+                                        <span className="pl-3">
+                                          <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                          >
+                                            <path
+                                              fillRule="evenodd"
+                                              clipRule="evenodd"
+                                              d="M6.29289 8.8427C6.68342 8.45217 7.31658 8.45217 7.70711 8.8427L12 13.1356L16.2929 8.8427C16.6834 8.45217 17.3166 8.45217 17.7071 8.8427C18.0976 9.23322 18.0976 9.86639 17.7071 10.2569L12 15.964L6.29289 10.2569C5.90237 9.86639 5.90237 9.23322 6.29289 8.8427Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </p>
+                                      <div
+                                        className={`lg:ml-[240px] lg:-mt-14 rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:w-[250px] lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                                          openSubIndex === index
+                                            ? "block"
+                                            : "hidden"
+                                        }`}
+                                      >
+                                        {submenuItem.submenu.map(
+                                          (subsubmenuItem, index) => (
+                                            <Link
+                                              href={subsubmenuItem.path}
+                                              key={index}
+                                              className="block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3"
+                                            >
+                                              {subsubmenuItem.title}
+                                            </Link>
+                                          )
+                                        )}
+                                      </div>
+                                    </>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
                           </>
                         )}
                       </li>

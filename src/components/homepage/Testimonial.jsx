@@ -47,24 +47,35 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="relative">
-      <div className="absolute inset-0 bg-secondary bg-opacity-80"></div>
-      <div className="absolute inset-0">
+    <div className="relative overflow-x-clip">
+      <div className="absolute inset-0 bg-primary bg-opacity-60"></div>
+      <div className="absolute w-full mt-20 lg:container lg:ml-10">
+        <h1 className="font-bold lg:text-5xl text-4xl text-white text-center">
+          Our Clients
+        </h1>
+        <p className="text-center text-white text-xl my-2 pb-10">
+          See what our valuable clients tell about us
+        </p>
         <Slider {...settings}>
           {data?.map((d) => (
-            <div
-              key={d.id}
-              className="grid grid-cols-2 gap-3 hover:scale-105 hover:pointer bg-white text-black group-hover:animate-jump group-hover:animate-once group-hover:animate-duration-[4000ms]"
-            >
-              <div className="flex flex-col items-center justify-center gap-4 p-4">
-                <Image
-                  src="/logo.png"
-                  width={100}
-                  height={100}
-                  alt="testimonialImg"
-                />
-                <h1 className="text-xl font-semibold line-clamp-1">{d.name}</h1>
-                <p className="text-gray-700 line-clamp-5">{d.review}</p>
+            <div key={d.id} className="px-10">
+              <div className="p-5 h-56 bg-white bg-opacity-70 text-black">
+                <div className="flex flex-col items-center justify-center p-4">
+                  <Image
+                    src="/logo.png"
+                    width={100}
+                    height={100}
+                    alt="testimonialImg"
+                    className="mb-4"
+                  />
+                  <h1 className="text-xl font-semibold line-clamp-1 mt-2">
+                    {d.name}
+                  </h1>
+                  <h1 className="text-md line-clamp-1">{d.designstion}</h1>
+                  <p className="text-gray-700 line-clamp-5 text-center">
+                    {d.review}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -74,7 +85,7 @@ const Testimonial = () => {
         src="/testimonial.jpg"
         width={1000}
         height={1000}
-        className="h-[350px] w-full"
+        className="h-[550px] w-full"
         alt="testimonialImg"
       />
     </div>

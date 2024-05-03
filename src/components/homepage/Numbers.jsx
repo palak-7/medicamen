@@ -10,7 +10,7 @@ const Numbers = () => {
   return (
     <div className="relative">
       <div className="absolute inset-0 bg-secondary bg-opacity-80"></div>
-      <div className="absolute inset-0 grid grid-cols-4">
+      <div className="absolute inset-0 grid lg:grid-cols-4 grid-cols-1">
         <div className="max-w-sm p-6 border-white m-10 border-4 rounded-lg shadow animate__animated animate-pulse">
           <FaTrophy className="text-white h-20 w-20 mx-auto" />
           <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white text-center">
@@ -55,7 +55,7 @@ const Numbers = () => {
         src="/counter.jpg"
         width={1000}
         height={1000}
-        className="h-[350px] w-full"
+        className="lg:h-[350px] h-[1300px] w-full"
         alt="numbersImg"
       />
     </div>

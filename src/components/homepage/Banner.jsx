@@ -51,7 +51,7 @@ function Banner() {
   ];
 
   return (
-    <div className="overflow-x-clip lg:mt-[105px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[105px] md:mt-[110px] sm:mt-[120px] mt-[200px]">
       <div>
         <Slider {...settings}>
           {data.map((d, index) => (
@@ -61,7 +61,7 @@ function Banner() {
                 height={1000}
                 src={d.img}
                 alt="slider-image"
-                className="w-full h-full"
+                className="lg:w-full lg:h-full h-[500px]"
               />
               {index === currentSlide && (
                 <div
@@ -71,11 +71,11 @@ function Banner() {
                       : ""
                   }`}
                 >
-                  <h1 className={`w-1/2 grid grid-cols-4`}>
-                    <div className=" col-span-3 col-start-2 text-5xl font-serif text-white font-bold">
+                  <h1 className={`lg:w-1/2 grid lg:grid-cols-4 grid-cols-1`}>
+                    <div className="lg:col-span-3 col-span-4 lg:col-start-2 mx-4 lg:text-5xl text-4xl font-serif text-white font-bold">
                       {d.name}
                     </div>
-                    <div className=" text-md text-gray-200 col-start-2 col-span-4">
+                    <div className="text-md text-gray-200 lg:col-start-2 lg:col-span-4 mx-4">
                       {d.subheading}
                     </div>
                   </h1>
@@ -84,7 +84,7 @@ function Banner() {
 
               {index === currentSlide && (
                 <div
-                  className={`absolute top-36 left-0 w-full h-full flex items-center ml-[170px]  ${
+                  className={`absolute lg:top-36 top-40 left-0 w-full h-full flex items-center lg:ml-[170px] ml-[15px] ${
                     index === currentSlide
                       ? "animate__animated animate__slideInUp"
                       : ""

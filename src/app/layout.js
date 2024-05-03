@@ -7,6 +7,7 @@ import UserProvider from "@/context/UserProvider";
 import Header from "@/components/common/Header/Header";
 import ScrollToTop from "@/components/common/ScrollToTop/page";
 import Top from "@/components/common/Header/Top";
+import Footer from "@/components/common/Footer/Footer";
 export const metadata = {
   title: "Medicamen Biotech Limited",
   description: "medicamen.com",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <ScrollToTop />
+          <Footer />
         </UserProvider>
       </body>
     </html>

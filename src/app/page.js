@@ -1,4 +1,6 @@
 import Banner from "@/components/homepage/Banner";
+import ChairmanWords from "@/components/homepage/ChairmanWords";
+import News from "@/components/homepage/News";
 import Numbers from "@/components/homepage/Numbers";
 import Offering from "@/components/homepage/Offering";
 import Testimonial from "@/components/homepage/Testimonial";
@@ -13,6 +15,8 @@ const page = () => {
       <Numbers />
       <Offering />
       <Testimonial />
+      <News />
+      <ChairmanWords />
     </div>
   );
 };

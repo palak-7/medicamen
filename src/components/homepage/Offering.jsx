@@ -66,14 +66,14 @@ const Offering = () => {
         <h1 className="font-bold mx-auto flex justify-center text-4xl mt-10">
           Offerings
         </h1>
-        <p className=" mx-52 mt-4 flex justify-center text-center">
+        <p className="lg:mx-52 text-justify mt-4 flex justify-center mx-3 lg:text-center">
           Committed to providing solutions to the pharmaceutical industry across
           the value chain Over the last decade, Medicamen has emerged as an
           integrated Pharmaceutical and Life Sciences Solution Provider offering
           products & services to its customers across the world.
         </p>
       </div>
-      <div className="grid grid-cols-4">
+      <div className="grid lg:grid-cols-4 grid-cols-1">
         {data.map((item) => (
           <Link
             key={item.id}

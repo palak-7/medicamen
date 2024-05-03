@@ -3,7 +3,7 @@ import React from "react";
 const VideoSection = () => {
   return (
     <div className="pt-20">
-      <div className="grid grid-cols-4">
+      <div className="lg:grid lg:grid-cols-4">
         <div className="p-10 col-start-1 col-span-2 -mt-10">
           <h1 className="text-4xl">MEDICAMEN BIOTECH LIMITED</h1>
           <p className="text-4xl font-bold">
@@ -27,6 +27,7 @@ const VideoSection = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
+            className="lg:h-[315px] lg:w-[560px] h-[200px] w-[250px] mx-10 mb-10"
           ></iframe>
         </div>
       </div>
