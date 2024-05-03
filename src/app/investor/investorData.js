@@ -9,7 +9,7 @@ export const data = [
     id: 2,
     name: "SUBSIDIARY COMPANIES",
     img: "/investors/investor-banner-2.png",
-    link: "/subsidiary-companies",
+    link: "subsidiary-companies",
   },
   {
     id: 3,

@@ -308,7 +308,7 @@ const menuData = [
     id: 7,
     title: "Career",
     newTab: false,
-    path: "/news",
+    path: "/career",
   },
   {
     id: 8,
