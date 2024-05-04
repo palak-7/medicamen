@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-5">DIABETOLOGY</h1>
       <p className="font-bold text-center">
         Affordable Niche Healthcare Solutions

@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import CareerDetail from "./CareerDetail";
 
-const page = () => {
+const page = ({ params }) => {
+  const id = params.id;
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <CareerDetail id={id} />
+    </div>
+  );
+};
 
-export default page
+export default page;

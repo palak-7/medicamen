@@ -7,9 +7,9 @@ const page = () => {
       <h1 className="font-bold text-4xl text-center pt-5 mb-10">
         Global Footprints
       </h1>
-      <div className="flex justify-evenly gap-x-2">
+      <div className="lg:flex justify-evenly gap-x-2">
         <Image src="/countries.jpg" width={500} height={400} className="mx-5" />
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 lg:ml-0 ml-3">
           <div className="flex">
             <Flag
               code="br"

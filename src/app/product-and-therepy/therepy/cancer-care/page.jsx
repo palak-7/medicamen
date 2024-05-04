@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-2">Cancer Care</h1>
       <div className="text-center">
         <h1 className="text-2xl">
           We create experiences that transform brands, grow businesses and make
           people’s lives better
         </h1>
-        <div className="flex">
-          <p className=" text-justify mx-20 mt-10 w-1/2">
+        <div className="lg:flex">
+          <p className=" text-justify mx-5 lg:mx-20 mt-10 lg:w-1/2">
             Cancer is the disease which is characterized by uncontrolled cell
             growth and in some cases it may metastasize (spread to the body).
             Cancer is the deadliest disease and this requires immediate
@@ -31,7 +31,7 @@ const page = () => {
             lives of millions of cancer patients in terms of health and economic
             aspects.
           </p>
-          <div className="flex justify-center mt-10 bg-secondary/60 p-10 mr-10">
+          <div className="flex justify-center mt-10 bg-secondary/60 p-10 lg:mr-10">
             <div className="">
               <h1 className="font-bold text-3xl mb-5">
                 NEW ONCOLOGY PLANT, HARIDWAR
@@ -49,7 +49,7 @@ const page = () => {
       </div>
 
       {/* cancer terms */}
-      <div className="grid grid-cols-3 m-20 gap-4">
+      <div className="grid lg:grid-cols-3 m-5 lg:m-20 gap-4">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-2xl">
           <Image
             className="rounded-t-lg w-full h-[250px]"
@@ -125,12 +125,12 @@ const page = () => {
       <div className="text-center">
         <h1 className="font-bold text-3xl">HAEMATOLOGY</h1>
         <h3 className="font-semibold text-xl">Blood Cancer</h3>
-        <h4 className="font-semibold mt-5">
+        <h4 className="font-semibold mt-5 lg:mx-0 mx-4">
           Blood cancer is an umbrella term for cancers that affect the blood,
           bone marrow and lymphatic system. There are three main types of blood
           cancer:
         </h4>
-        <ul className=" list-disc text-left mx-20 mt-5 leading-loose">
+        <ul className=" list-disc text-left mx-10 lg:mx-20 mt-5 leading-loose">
           <li>
             <strong>Leukaemia:</strong>
             Leukaemia, a type of cancer found in your blood and bone marrow, is
@@ -166,7 +166,7 @@ const page = () => {
           types of solid tumors, whether a sarcoma or a carcinoma, are often
           treated with surgery.
         </h4>
-        <ul className=" list-disc text-left mx-20 mt-5 leading-loose">
+        <ul className=" list-disc text-left mx-10 lg:mx-20 mt-5 leading-loose">
           <li>
             <strong>Sarcomas :</strong>
             Sarcomas are tumors in a blood vessel, bone, fat tissue, ligament,

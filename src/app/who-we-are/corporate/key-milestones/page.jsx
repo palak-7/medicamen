@@ -3,13 +3,13 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
-      <div className="grid grid-cols-3">
-        <div className="ml-3">
+      <div className="grid lg:grid-cols-3 grid-cols-1">
+        <div className="lg:ml-3 lg:mt-0 mt-28 mx-4">
           <Image
             src="/key-milestone.png"
             width={500}
             height={300}
-            className="h-[300px] w-[500px] mt-10"
+            className="lg:h-[300px] lg:w-[500px] h-[200px] lg:mt-10"
           />
         </div>
         <div className="col-span-2 p-5">
@@ -38,9 +38,9 @@ const page = () => {
           Chronological Order
         </h1>
         <div className="flex justify-center mt-10">
-          <div className="flex">
+          <div className="lg:flex">
             <Image src="/chronology/sign1.png" width={200} height={300} />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 mx-2">
               <div>
                 <div>&#8226;1993</div>
                 <p>Medicamen established.</p>
@@ -64,8 +64,8 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="bg-secondary/30 mx-20 p-10 flex justify-center mt-10">
-          <div className="flex">
+        <div className="bg-secondary/30 lg:mx-20 p-10 flex justify-center mt-10">
+          <div className="lg:flex">
             <Image
               src="/chronology/sign2.png"
               width={200}
@@ -87,8 +87,8 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mx-20 mt-10">
-          <div className="flex">
+        <div className="flex justify-center lg:mx-20 mx-4 mt-10">
+          <div className="lg:flex">
             <Image src="/chronology/sign1.png" width={200} height={300} />
             <div className="grid grid-cols-2 gap-4">
               <div>
@@ -120,8 +120,8 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="bg-secondary/30 mx-20 p-10 flex justify-center mt-10">
-          <div className="flex">
+        <div className="bg-secondary/30 mx-4 lg:mx-20 p-10 flex justify-center mt-10">
+          <div className="lg:flex">
             <Image
               src="/chronology/sign4.png"
               width={200}

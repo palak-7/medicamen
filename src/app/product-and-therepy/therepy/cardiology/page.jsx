@@ -5,15 +5,15 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-2">CARDIOLOGY</h1>
       <div className="text-center">
         <h1 className="text-2xl">
           The modern lifestyle has promoted a new array of cardiovascular risk
           factors
         </h1>
-        <div className="flex">
-          <p className=" text-justify mx-20 mt-20 w-1/2">
+        <div className="lg:flex">
+          <p className=" text-justify mx-5 lg:mx-20 lg:mt-20 mt-10 lg:w-1/2">
             Cardiology is a branch of medicine dealing with disorders of the
             heart as well as parts of circulatory system. It includes treatment
             of congenital heart defects, coronary artery disease, heart failure,
@@ -25,7 +25,7 @@ const page = () => {
             that make a real difference in quality of life for patients with
             metabolic diseases and at cardiovascular risk.
           </p>
-          <div className="flex justify-center mt-10 bg-secondary/60 p-10 mr-10">
+          <div className="flex justify-center mt-10 bg-secondary/60 p-10 lg:mr-10">
             <div className="">
               <div className="flex justify-center">
                 <Image

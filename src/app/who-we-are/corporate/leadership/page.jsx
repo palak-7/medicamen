@@ -6,11 +6,11 @@ const page = () => {
   return (
     <div className="relative overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
       <h1 className="font-bold text-4xl text-center pt-5">LEADERSHIP & TEAM</h1>
-      <div className="grid grid-cols-2 gap-y-10 mx-20 mt-10">
+      <div className="grid lg:grid-cols-2 gap-y-10 mx-20 mt-10">
         {leadership.map((l) => (
           <Link
             href={`/${l.link}`}
-            className="flex bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:scale-105 hover:cursor-pointer md:max-w-xl hover:bg-gray-100"
+            className="lg:flex bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:scale-105 hover:cursor-pointer md:max-w-xl hover:bg-gray-100"
           >
             <Image
               className="object-cover md:h-auto md:w-[280px] rounded-t-lg md:rounded-none md:rounded-s-lg"

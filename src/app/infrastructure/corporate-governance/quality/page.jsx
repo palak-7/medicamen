@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-5">Quality</h1>
       <div className="text-center">
         <h1 className="text-2xl mt-5">Formulation (FDF )Plant Unit I</h1>
@@ -12,7 +12,7 @@ const page = () => {
         </p>
       </div>
       {/* key highlights */}
-      <div className="bg-secondary text-white p-4 rounded-xl mx-44 shadow-xl mt-10">
+      <div className="bg-secondary text-white p-4 rounded-xl mx-4 lg:mx-44 shadow-xl mt-10">
         <h1 className="text-4xl font-serif font-bold text-center mb-3">
           Key Highlights
         </h1>
@@ -26,13 +26,13 @@ const page = () => {
 
       {/* lab descriptions */}
       <div className="flex justify-center mt-10 bg-secondary p-10 text-white">
-        <div className="flex">
+        <div className="lg:flex">
           <Image
             src="/infrastructure/well-developed.jpg"
             width={300}
             height={300}
           />
-          <div className="ml-10 mt-10">
+          <div className="lg:ml-10 mt-10">
             <h1 className="text-2xl font-bold">QUALITY ASSURANCE</h1>
             <p>
               A comprehensive quality assurance programme at every stage of
@@ -47,13 +47,13 @@ const page = () => {
         </div>
       </div>
       <div className="flex bg-secondary px-10 pb-10 text-white">
-        <div className="flex">
+        <div className="lg:flex">
           <Image
             src="/infrastructure/QUALITYCONTROL.jpg"
             width={300}
             height={300}
           />
-          <div className="ml-10 mt-10">
+          <div className="lg:ml-10 mt-10">
             <h1 className="text-2xl font-bold">Quality Control</h1>
             <p>
               We ensure the quality of starting and packaging materials by

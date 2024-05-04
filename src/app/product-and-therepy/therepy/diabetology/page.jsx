@@ -5,14 +5,14 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-2">DIABETOLOGY</h1>
       <div className="text-center">
         <h1 className="text-2xl">
           Helping to Reduce Health Disparities in Diabetes
         </h1>
-        <div className="flex">
-          <p className=" text-justify mx-20 mt-20 w-1/2">
+        <div className="lg:flex">
+          <p className=" text-justify mx-5 lg:mx-20 mt-10 lg:mt-20 lg:w-1/2">
             Diabetes is a group of metabolic disorders in which there are high
             blood sugar levels over a prolong period. This could be due to the
             lack of hormonal insulin or because the insulin that is available in
@@ -30,7 +30,7 @@ const page = () => {
             goal of developing life-changing medicines that focus on better
             management of this disease.
           </p>
-          <div className="flex justify-center mt-10 bg-secondary/60 p-10 mr-10">
+          <div className="flex justify-center mt-10 bg-secondary/60 p-10 lg:mr-10">
             <div className="">
               <div className="flex justify-center">
                 <Image

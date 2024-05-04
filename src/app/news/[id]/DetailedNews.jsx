@@ -37,7 +37,7 @@ const DetailedNews = ({ id }) => {
     getAllNews();
   }, []);
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px] grid grid-cols-4">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px] grid lg:grid-cols-4">
       <div className="col-span-3">
         <div className="mx-5">
           <h1 className="text-3xl text-center font-bold p-4 mb-4">
@@ -90,7 +90,7 @@ const DetailedNews = ({ id }) => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 border mr-5">
+      <div className="lg:p-0 lg:ml-0 ml-3 px-4 col-span-1 border lg:mr-5">
         <h1 className="text-center font-semibold text-xl my-2 text-primary font-serif">
           Categories
         </h1>

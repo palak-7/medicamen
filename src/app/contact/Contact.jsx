@@ -33,7 +33,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="overflow-x-clip lg:mt-[100px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[100px] md:mt-[110px] sm:mt-[120px] mt-[160px]">
       <section className="" id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4">

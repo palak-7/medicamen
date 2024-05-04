@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-5">Haridwar Unit-II</h1>
       <div className="text-center">
         <h1 className="text-2xl mt-5">Oncology Facility</h1>
@@ -12,7 +12,7 @@ const page = () => {
         </p>
       </div>
       {/* key highlights */}
-      <div className="bg-secondary text-white p-4 rounded-xl mx-44 shadow-xl mt-10">
+      <div className="bg-secondary text-white p-4 rounded-xl mx-5 lg:mx-44 shadow-xl mt-10">
         <h1 className="text-4xl font-serif font-bold text-center mb-3">
           Key Highlights
         </h1>
@@ -23,7 +23,7 @@ const page = () => {
       </div>
       {/* lab descriptions */}
       <div className="flex justify-center mt-10 bg-secondary p-10 text-white">
-        <div className="flex">
+        <div className="lg:flex">
           <Image
             src="/infrastructure/GeneralBlock.jpg"
             width={300}

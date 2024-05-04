@@ -60,12 +60,12 @@ const page = () => {
     },
   ];
   return (
-    <div className="relative overflow-x-clip lg:mt-[200px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
-      <h1 className="text-3xl font-bold text-center mx-20">
+    <div className="relative overflow-x-clip lg:mt-[200px] md:mt-[110px] sm:mt-[120px] mt-[250px]">
+      <h1 className="text-3xl font-bold text-center mx-10 lg:mx-20">
         OUR LEADERSHIP TEAM HAS A CLEAR VISION & PASSION FOR BEING GLOBAL LEADER
         IN ONCOLOGY & OTHER BRANDED GENERICS.
       </h1>
-      <div className="grid grid-cols-4 m-20 gap-4">
+      <div className="grid lg:grid-cols-4 m-20 gap-4">
         {directors.map((d) => (
           <div
             key={d.id}

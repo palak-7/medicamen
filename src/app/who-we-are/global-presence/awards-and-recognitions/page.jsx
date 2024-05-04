@@ -4,8 +4,8 @@ const page = () => {
   return (
     <div className="overflow-x-clip lg:mt-[200px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
       <h1 className="text-3xl font-bold text-center">AWARDS & RECOGNITIONS</h1>
-      <div className="grid grid-cols-15 mt-10 gap-4">
-        <div className="col-start-3 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+      <div className="lg:grid grid-cols-15 mt-10 gap-4">
+        <div className="m-4 lg:m-0 col-start-3 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <Image
             className="rounded-t-lg w-[400px]"
             src="/awards/award1.jpg"
@@ -23,7 +23,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="col-start-6 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <div className="m-4 lg:m-0 col-start-6 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <Image
             className="rounded-t-lg w-[400px]"
             src="/awards/award2.jpg"
@@ -42,7 +42,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="col-start-9 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <div className="m-4 lg:m-0 col-start-9 col-span-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <Image
             className="rounded-t-lg w-[400px]"
             src="/awards/award3.jpg"

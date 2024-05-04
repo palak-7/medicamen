@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Investor = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className=" text-center font-bold text-5xl mt-5">Investors</h1>
-      <div className="grid grid-cols-3 m-20 gap-4">
+      <div className="grid lg:grid-cols-3 lg:m-20 m-5 gap-4">
         {data.map((d) => (
           <div
             key={d.id}

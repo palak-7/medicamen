@@ -10,7 +10,7 @@ const page = () => {
   const x = usePathName.split("/");
   return (
     <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
-      <div className="flex justify-evenly">
+      <div className="mx-5 lg:mx-0 lg:flex justify-evenly">
         <Sidebar selected={x[2]} />
         <div class="mx-10 relative overflow-x-auto shadow-md sm:rounded-lg">
           <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">

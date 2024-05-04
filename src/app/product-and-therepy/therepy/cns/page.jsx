@@ -5,15 +5,15 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const page = () => {
   return (
-    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-2">CNS</h1>
       <div className="text-center">
         <h1 className="text-2xl">
           Aiming for the social reintegration of patients with psychiatric and
           neurological disorders
         </h1>
-        <div className="flex">
-          <p className=" text-justify mx-20 mt-20 w-1/2">
+        <div className="lg:flex">
+          <p className=" text-justify mx-5 lg:mx-20 mt-10 lg:mt-20 lg:w-1/2">
             Diseases of the central nervous system are also known as psychiatric
             and neurological disorders. Since the causes of and fundamental
             treatments for these conditions have not been fully understood, it
@@ -34,7 +34,7 @@ const page = () => {
             challenge of introducing new technologies and new dosage formats to
             ensure reliable medication delivery.
           </p>
-          <div className="flex justify-center mt-10 bg-secondary/60 p-10 mr-10">
+          <div className="flex justify-center mt-10 bg-secondary/60 p-10 lg:mr-10">
             <div className="">
               <div className="flex justify-center">
                 <Image

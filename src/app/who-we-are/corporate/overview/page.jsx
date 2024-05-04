@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="relative overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
+    <div className="relative overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[200px]">
       <h1 className="font-bold text-4xl text-center pt-5 mb-4">About Us</h1>
       {/* about us */}
-      <div className=" mx-32">
+      <div className="mx-4 lg:mx-32">
         <p>
           Established in December 1993, Medicamen Group has vertically
           integrated facilities in terms of R&D, APIs & Formulations.
@@ -28,7 +28,7 @@ const page = () => {
 
       {/* cards */}
       <div className="mt-10 ">
-        <div className="absolute grid grid-cols-3 text-white z-30 gap-x-10">
+        <div className="absolute grid lg:grid-cols-3 grid-cols-1 text-white z-30 gap-x-10">
           <div className="border-white border-2 m-14 p-6 hover:scale-105 hover:bg-black hover:bg-opacity-35">
             <h1 className="font-bold text-3xl text-center mb-2">Our Vision</h1>
             <p className="text-center">
@@ -53,12 +53,12 @@ const page = () => {
           </div>
         </div>
 
-        <div className="absolute top-25 left-0 w-full h-[300px] bg-primary opacity-60 z-20"></div>
+        <div className="absolute top-25 left-0 w-full h-[1000px] bg-primary opacity-60 z-20"></div>
         <Image
           src="/bannerImg.jpg"
           width={1000}
           height={300}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-[1000px] lg:h-[300px] object-cover"
         />
       </div>
       {/* infrastructure */}
@@ -66,7 +66,7 @@ const page = () => {
         <h1 className="font-bold text-4xl text-center pt-5 mb-4">
           Infrastructure Highlights
         </h1>
-        <div className="grid grid-cols-2 gap-x-4">
+        <div className="grid lg:grid-cols-2 gap-x-4">
           <div className="m-4 bg-secondary/80 text-center p-3 text-white font-semibold rounded-lg shadow-xl">
             R&D Centre approved by Department of Scientific & Industrial
             Research(DSIR), at Bhiwadi, (Rajasthan, India) for carrying out
@@ -83,14 +83,14 @@ const page = () => {
           <h1 className="font-semibold text-2xl">
             Three manufacturing facilities for Finished Dosage Forms (FDF):
           </h1>
-          <div className="grid grid-cols-3 gap-x-4 mt-5">
-            <p className="bg-secondary/90 rounded-full p-10 text-white shadow-xl">
+          <div className="grid lg:grid-cols-3 gap-x-4 mt-5">
+            <p className="bg-secondary/90 lg:mb-0 mb-4 rounded-full p-10 text-white shadow-xl">
               <h3 className="text-2xl font-bold">First Formulation (FDF)</h3>
               facility established in 1993 for General Formulations at Bhiwadi
               (Rajasthan, India). This plant has been audited by an EU member
               country and is soon expected to be an EU-approved facility.
             </p>
-            <p className="bg-secondary/90 rounded-full p-10 text-white shadow-xl">
+            <p className="bg-secondary/90 lg:mb-0 mb-4  rounded-full p-10 text-white shadow-xl">
               <h3 className="text-2xl font-bold">Second Formulation(FDF)</h3>{" "}
               facility established in 2007 for General Formulations at Haridwar
               Unit-I (Uttarakhand, India)
@@ -109,12 +109,12 @@ const page = () => {
         <h1 className="font-bold text-2xl text-center pt-5 mb-4">
           Medicamen, an innovative way of thinking.
         </h1>
-        <div className="w-1/2 mx-auto">
+        <div className="lg:w-1/2 mx-4">
           <h3 className="font-semibold text-lg text-center">
             At Medicamen, we are looking at new ways of thinking, new ways of
             working and new ways to touch people's lives.
           </h3>
-          <p className="mx-10 text-center">
+          <p className="lg:mx-10 text-center">
             Medicamen follows innovative business models to make the most of
             emerging opportunities. A new drive for growth today permeates every
             mind-set, process and techno-innovation within Medicamen Biotech.
@@ -122,7 +122,7 @@ const page = () => {
           <h3 className="font-semibold text-lg text-center mt-4">
             Trusted Partner
           </h3>
-          <p className="mx-10 text-center">
+          <p className="lg:mx-10 text-center">
             We build relations that enable us to deliver lasting solutions for
             the benefit of our customers. We are proud to be trusted by our
             customers and suppliers world over.
@@ -130,7 +130,7 @@ const page = () => {
           <h3 className="font-semibold text-lg text-center mt-4">
             Transforming solution
           </h3>
-          <p className="mx-10 text-center">
+          <p className="lg:mx-10 text-center">
             We strive constantly towards developing Transforming solutions in
             all aspects of our service. We think proactively.
           </p>

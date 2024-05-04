@@ -26,7 +26,7 @@ const News = () => {
       <h1 className="font-bold text-3xl text-center m-5">
         Check Out the latest News
       </h1>
-      <div className="grid grid-cols-3 gap-x-5 mx-20">
+      <div className="grid lg:grid-cols-3 gap-x-5 mx-4 lg:mx-20">
         {news.map((n) => (
           <div
             key={n.id}
