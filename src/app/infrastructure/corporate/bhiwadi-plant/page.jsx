@@ -9,7 +9,7 @@ const page = () => {
           src="/BhiwadiPlant.png"
           width={1000}
           height={100}
-          className="h-[200px] lg:h-[100px]"
+          className="h-[200px] lg:h-[400px]"
           alt=""
         />
       </div>

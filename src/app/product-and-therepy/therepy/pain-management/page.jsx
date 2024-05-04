@@ -49,7 +49,7 @@ const page = () => {
       </p>
       <div className="flex justify-center mt-2">
         <Link
-          href="/"
+          href="/product-and-therepy/product/pain-management"
           className="bg-primary hover:bg-primary/90 text-white p-3 flex w-28"
         >
           <button>Products</button>

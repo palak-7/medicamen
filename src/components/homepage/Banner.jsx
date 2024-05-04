@@ -58,7 +58,7 @@ function Banner() {
             <div key={d.name} className="relative -mt-20 w-screen">
               <Image
                 width={1000}
-                height={1000}
+                height={100}
                 src={d.img}
                 alt="slider-image"
                 className="lg:w-full lg:h-full h-[500px]"

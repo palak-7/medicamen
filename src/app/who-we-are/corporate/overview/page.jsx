@@ -53,7 +53,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="absolute top-25 left-0 w-full h-[1000px] bg-primary opacity-60 z-20"></div>
+        <div className="absolute top-25 left-0 w-full lg:h-[300px] h-[1000px] bg-primary opacity-60 z-20"></div>
         <Image
           src="/bannerImg.jpg"
           width={1000}
