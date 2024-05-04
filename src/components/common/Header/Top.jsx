@@ -16,7 +16,7 @@ const Top = () => {
           aria-label="social-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+          className="mr-6 text-body-color duration-300 hover:text-secondary"
         >
           <FaInstagram />
         </Link>
@@ -25,7 +25,7 @@ const Top = () => {
           aria-label="social-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+          className="mr-6 text-body-color duration-300 hover:text-secondary"
         >
           <IoLogoWhatsapp />
         </Link>
@@ -34,7 +34,7 @@ const Top = () => {
           aria-label="social-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+          className="mr-6 text-body-color duration-300 hover:text-secondary"
         >
           <FaTelegramPlane />
         </Link>

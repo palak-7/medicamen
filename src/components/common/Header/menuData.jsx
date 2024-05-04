@@ -253,37 +253,37 @@ const menuData = [
         newTab: false,
         submenu: [
           {
-            id: 411,
+            id: 421,
             title: "Cancer Care",
             path: "/product-and-therepy/product/cancer-care",
             newTab: false,
           },
           {
-            id: 412,
+            id: 422,
             title: "Cardiology",
             path: "/product-and-therepy/product/cardiology",
             newTab: false,
           },
           {
-            id: 413,
+            id: 423,
             title: "CNS",
             path: "/product-and-therepy/product/cns",
             newTab: false,
           },
           {
-            id: 414,
+            id: 424,
             title: "Diabetology",
             path: "/product-and-therepy/product/diabetology",
             newTab: false,
           },
           {
-            id: 415,
+            id: 425,
             title: "Other Generics",
             path: "/product-and-therepy/product/other-generics",
             newTab: false,
           },
           {
-            id: 416,
+            id: 426,
             title: "Pain Management",
             path: "/product-and-therepy/product/pain-management",
             newTab: false,
