@@ -6,8 +6,8 @@ const page = () => {
       <h1 className="text-3xl font-bold text-center mb-2">Facility Tour</h1>
       <p className="text-center mb-10 mx-3 lg:mx-28">
         Medicamen competitive advantage as a Manufacture stems from its
-        world-class facilities. INDIA's fastest growing Generic and Speciality
-        Pharmaceutical Company.
+        world-class facilities. INDIA&apos;s fastest growing Generic and
+        Speciality Pharmaceutical Company.
       </p>
       <div className="flex justify-center">
         <iframe

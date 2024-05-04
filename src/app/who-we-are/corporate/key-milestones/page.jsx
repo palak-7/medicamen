@@ -10,6 +10,7 @@ const page = () => {
             width={500}
             height={300}
             className="lg:h-[300px] lg:w-[500px] h-[200px] lg:mt-10"
+            alt=""
           />
         </div>
         <div className="col-span-2 p-5">
@@ -39,7 +40,12 @@ const page = () => {
         </h1>
         <div className="flex justify-center mt-10">
           <div className="lg:flex">
-            <Image src="/chronology/sign1.png" width={200} height={300} />
+            <Image
+              src="/chronology/sign1.png"
+              width={200}
+              height={300}
+              alt=""
+            />
             <div className="grid grid-cols-2 gap-4 mx-2">
               <div>
                 <div>&#8226;1993</div>
@@ -71,6 +77,7 @@ const page = () => {
               width={200}
               height={300}
               className="mr-10"
+              alt=""
             />
             <div className="grid grid-cols-1 gap-4">
               <div>
@@ -89,7 +96,12 @@ const page = () => {
         </div>
         <div className="flex justify-center lg:mx-20 mx-4 mt-10">
           <div className="lg:flex">
-            <Image src="/chronology/sign1.png" width={200} height={300} />
+            <Image
+              src="/chronology/sign1.png"
+              width={200}
+              height={300}
+              alt=""
+            />
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <div>&#8226;2016</div>
@@ -127,6 +139,7 @@ const page = () => {
               width={200}
               height={300}
               className="mr-10"
+              alt=""
             />
             <div className="grid grid-cols-1 gap-4">
               <div>

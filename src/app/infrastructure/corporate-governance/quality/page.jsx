@@ -31,6 +31,7 @@ const page = () => {
             src="/infrastructure/well-developed.jpg"
             width={300}
             height={300}
+            alt=""
           />
           <div className="lg:ml-10 mt-10">
             <h1 className="text-2xl font-bold">QUALITY ASSURANCE</h1>
@@ -52,6 +53,7 @@ const page = () => {
             src="/infrastructure/QUALITYCONTROL.jpg"
             width={300}
             height={300}
+            alt=""
           />
           <div className="lg:ml-10 mt-10">
             <h1 className="text-2xl font-bold">Quality Control</h1>

@@ -32,6 +32,7 @@ const page = () => {
                   src="/product-and-therepy/therepy/cardiology_img.png"
                   height={300}
                   width={300}
+                  alt=""
                 />
               </div>
             </div>

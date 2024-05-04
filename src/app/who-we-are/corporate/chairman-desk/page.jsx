@@ -3,7 +3,9 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="relative overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[120px]">
-      <h1 className="font-bold text-4xl text-center pt-5">CHAIRMAN'S DESK</h1>
+      <h1 className="font-bold text-4xl text-center pt-5">
+        CHAIRMAN&apos;S DESK
+      </h1>
       <div className="mt-10">
         <h1 className="absolute mt-10 left-0 z-30 w-full text-white text-center font-bold font-serif leading-normal text-xl lg:text-4xl p-4 px-10">
           Our people are our assets and their welfare is our responsibility. The
@@ -17,6 +19,7 @@ const page = () => {
           width={1000}
           height={300}
           className="w-full h-[300px] object-cover"
+          alt=""
         />
       </div>
       <div className="lg:grid grid-cols-4 gap-x-4">

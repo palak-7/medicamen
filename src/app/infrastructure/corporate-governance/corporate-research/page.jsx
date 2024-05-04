@@ -58,13 +58,19 @@ const page = () => {
       </h1>
       <div className="grid lg:grid-cols-2 mt-10">
         <div className="mx-auto">
-          <Image src="/infrastructure/FRD_GEN1.jpg" width={350} height={350} />
+          <Image
+            src="/infrastructure/FRD_GEN1.jpg"
+            width={350}
+            height={350}
+            alt=""
+          />
         </div>
         <div className="mx-auto lg:mt-0 mt-4">
           <Image
             src="/infrastructure/Banner_RandD2.jpg"
             width={350}
             height={350}
+            alt=""
           />
         </div>
       </div>

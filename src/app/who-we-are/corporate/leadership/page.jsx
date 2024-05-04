@@ -9,6 +9,7 @@ const page = () => {
       <div className="grid lg:grid-cols-2 gap-y-10 mx-20 mt-10">
         {leadership.map((l) => (
           <Link
+          key={l.id}
             href={`/${l.link}`}
             className="lg:flex bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:scale-105 hover:cursor-pointer md:max-w-xl hover:bg-gray-100"
           >

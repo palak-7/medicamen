@@ -8,7 +8,13 @@ const page = () => {
         Global Footprints
       </h1>
       <div className="lg:flex justify-evenly gap-x-2">
-        <Image src="/countries.jpg" width={500} height={400} className="mx-5" />
+        <Image
+          src="/countries.jpg"
+          width={500}
+          height={400}
+          className="mx-5"
+          alt=""
+        />
         <div className="grid lg:grid-cols-2 lg:ml-0 ml-3">
           <div className="flex">
             <Flag
@@ -143,14 +149,14 @@ const page = () => {
             </div>
           </div>
           <div className="flex">
-            <Image src="/who.png" width={40} height={8} />
+            <Image src="/who.png" width={40} height={8} alt="" />
             <div className="mt-2 ml-2 flex">
               <div className="font-semibold">World Health Organisation:</div>
               <div>WHO</div>
             </div>
           </div>
           <div className="flex">
-            <Image src="/paho.jpg" width={40} height={8} />
+            <Image src="/paho.jpg" width={40} height={8} alt="" />
             <div className="mt-2 ml-2 flex">
               <div className="font-semibold">
                 Pan American Health Organisation:

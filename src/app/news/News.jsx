@@ -38,6 +38,7 @@ const News = () => {
                 width={400}
                 height={200}
                 className="h-[200px] w-[400px]"
+                alt=""
               />
               <h1 className="font-semibold text-2xl mt-2">{n.title}</h1>
               <div className="flex justify-between my-2">

@@ -26,15 +26,30 @@ const page = () => {
       <div className="grid lg:grid-cols-3 mt-10">
         <div className="mx-auto">
           <h1 className="font-semibold text-2xl">Tablets</h1>
-          <Image src="/infrastructure/Tablets.jpg" width={250} height={250} />
+          <Image
+            src="/infrastructure/Tablets.jpg"
+            width={250}
+            height={250}
+            alt=""
+          />
         </div>
         <div className="mx-auto">
           <h1 className="font-semibold text-2xl">Ointments</h1>
-          <Image src="/infrastructure/Ointments.jpg" width={250} height={250} />
+          <Image
+            src="/infrastructure/Ointments.jpg"
+            width={250}
+            height={250}
+            alt=""
+          />
         </div>
         <div className="mx-auto">
           <h1 className="font-semibold text-2xl">Liquids</h1>
-          <Image src="/infrastructure/Liquid.jpg" width={250} height={250} />
+          <Image
+            src="/infrastructure/Liquid.jpg"
+            width={250}
+            height={250}
+            alt=""
+          />
         </div>
       </div>
       {/* lab descriptions */}
@@ -44,6 +59,7 @@ const page = () => {
             src="/infrastructure/GeneralBlock.jpg"
             width={300}
             height={300}
+            alt=""
           />
           <div className="ml-10 mt-10">
             <h1 className="text-2xl font-bold">General Block</h1>
@@ -80,6 +96,7 @@ const page = () => {
             src="/infrastructure/well-developed.jpg"
             width={300}
             height={300}
+            alt=""
           />
           <div className="ml-10 mt-10">
             <h1 className="text-2xl font-bold">Well-developed QC lab</h1>

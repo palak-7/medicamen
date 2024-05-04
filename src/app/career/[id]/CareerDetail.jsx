@@ -35,15 +35,6 @@ const CareerDetail = ({ id }) => {
           <div className="text-center">{obj.address}</div>
         </div>
       </div>
-      {/* <div className="flex justify-center">
-        <Image
-          src={`/career/${obj.image}`}
-          alt="career1"
-          className="w-[500px]"
-          height={200}
-          width={500}
-        />
-      </div> */}
       <div className="lg:grid grid-cols-4 gap-x-10 m-10">
         <div className="col-start-2 col-span-1 bg-primary text-white p-4 hover:shadow-2xl hover:bg-primary/10 hover:text-black">
           <div className="flex my-2 justify-center">

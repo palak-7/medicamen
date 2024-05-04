@@ -28,6 +28,7 @@ const page = () => {
             src="/infrastructure/GeneralBlock.jpg"
             width={300}
             height={300}
+            alt=""
           />
           <div className="ml-10 mt-10">
             <h1 className="text-2xl font-bold">

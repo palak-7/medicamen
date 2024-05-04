@@ -19,6 +19,7 @@ const Career = () => {
             width={200}
             height={100}
             className="w-[200px]"
+            alt=""
           />
           <div className="lg:ml-10">
             <div className="font-bold text-xl">{d.post}</div>

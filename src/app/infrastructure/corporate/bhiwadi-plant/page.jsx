@@ -10,6 +10,7 @@ const page = () => {
           width={1000}
           height={100}
           className="h-[200px] lg:h-[100px]"
+          alt=""
         />
       </div>
       <div className="text-center">

@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import connection from "../../../helper/db";
 export async function GET() {
-  console.log("hello");
   try {
     const results = await new Promise((resolve, reject) => {
       // Perform the database query

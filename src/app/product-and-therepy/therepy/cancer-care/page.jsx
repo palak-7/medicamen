@@ -41,6 +41,7 @@ const page = () => {
                   src="/product-and-therepy/therepy/HARIDWAR.jpg"
                   height={300}
                   width={300}
+                  alt=""
                 />
               </div>
             </div>
@@ -87,13 +88,13 @@ const page = () => {
             </h5>
             <p className="mb-3 font-normal text-gray-700">
               A tumor is an abnormal clump of cells. When your child has a solid
-              tumor, that means the tumor doesn't contain any liquid or cysts.
-              Solid tumors can develop in the muscles, bone, and organs of the
-              body. Examples include mesothelioma, sarcomas, lymphomas, sarcomas
-              as well as cancers of the breast, prostate, kidney, ovaries,
-              pancreas, thyroid, and colon. Not all tumors are cancer. A tumor
-              that does not have any cancer cells is called benign. A tumor with
-              cancer cells is called malignant.
+              tumor, that means the tumor doesn&apos;t contain any liquid or
+              cysts. Solid tumors can develop in the muscles, bone, and organs
+              of the body. Examples include mesothelioma, sarcomas, lymphomas,
+              sarcomas as well as cancers of the breast, prostate, kidney,
+              ovaries, pancreas, thyroid, and colon. Not all tumors are cancer.
+              A tumor that does not have any cancer cells is called benign. A
+              tumor with cancer cells is called malignant.
             </p>
           </div>
         </div>
@@ -153,7 +154,7 @@ const page = () => {
             Myeloma is a cancer of the plasma cells. Plasma cells are white
             blood cells that produce disease- and infection-fighting antibodies
             in your body. Myeloma cells prevent the normal production of
-            antibodies, leaving your body's immune system weakened and
+            antibodies, leaving your body&apos;s immune system weakened and
             susceptible to infection.
           </li>
         </ul>

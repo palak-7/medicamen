@@ -102,23 +102,6 @@ export default function Comment(props) {
         </>
       );
     }
-    // return (
-    //   <>
-    //     <button
-    //       onClick={handleIsReplying}
-    //       className="flex space-x-2 items-center py-1 hover:opacity-50 text-Moderate-blue"
-    //     >
-    //       <Image
-    //         className="mr-2"
-    //         src="/icon-reply.svg"
-    //         alt="replyImg"
-    //         width={10}
-    //         height={10}
-    //       />
-    //       Reply
-    //     </button>
-    //   </>
-    // );
   }
 
   return (

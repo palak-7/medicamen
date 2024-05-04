@@ -37,6 +37,7 @@ const page = () => {
                   src="/product-and-therepy/therepy/diabetology.png"
                   height={300}
                   width={300}
+                  alt=""
                 />
               </div>
             </div>

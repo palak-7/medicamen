@@ -59,6 +59,7 @@ const page = () => {
           width={1000}
           height={300}
           className="w-full h-[1000px] lg:h-[300px] object-cover"
+          alt=""
         />
       </div>
       {/* infrastructure */}
@@ -112,7 +113,7 @@ const page = () => {
         <div className="lg:w-1/2 mx-4">
           <h3 className="font-semibold text-lg text-center">
             At Medicamen, we are looking at new ways of thinking, new ways of
-            working and new ways to touch people's lives.
+            working and new ways to touch people&apos;s lives.
           </h3>
           <p className="lg:mx-10 text-center">
             Medicamen follows innovative business models to make the most of
