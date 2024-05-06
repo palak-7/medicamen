@@ -150,43 +150,53 @@ const Footer = () => {
               <div className="flex gap-6 xl:gap-12 max-xl:justify-center">
                 <ul className="text-gray-600 transition-all duration-500 grid gap-6">
                   <li>
-                    <a href="javascript:;">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="javascript:;">About Us</a>
+                    <Link href="/who-we-are/corporate/key-milestones">
+                      Key Milestones
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Contact Us</a>
+                    <Link href="/news">News</Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Terms and Conditions</a>
+                    <Link href="j/career">Career</Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Privacy Policy</a>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="block xl:py-16 col-span-full md:col-span-4 xl:col-span-3">
               <h4 className="text-lg text-gray-900 font-bold mb-9 text-center xl:text-left">
-                Other Links
+                Products
               </h4>
               <div className="flex gap-6 xl:gap-12 max-xl:justify-center">
                 <ul className="text-gray-600 transition-all duration-500 grid gap-6">
                   <li>
-                    <a href="javascript:;">News</a>
+                    <Link href="/product-and-therepy/product/cancer-care">
+                      Cancer Care
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Invester</a>
+                    <Link href="/product-and-therepy/product/cardiolog">
+                      Cardiology
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Photo Gallery</a>
+                    <Link href="/product-and-therepy/product/cns">CNS</Link>
                   </li>
                   <li>
-                    <a href="javascript:;">Testimonial</a>
+                    <Link href="/product-and-therepy/product/diabetology">
+                      Diabetology
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:;">FAQs</a>
+                    <Link href="/product-and-therepy/product/pain-management">
+                      Pain Management
+                    </Link>
                   </li>
                 </ul>
               </div>
