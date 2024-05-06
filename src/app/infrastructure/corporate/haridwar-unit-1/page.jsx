@@ -93,7 +93,7 @@ const page = () => {
       <div className="flex bg-secondary px-10 pb-10 text-white">
         <div className="lg:flex lg:ml-32">
           <Image
-            src="/infrastructure/well-developed.jpg"
+            src="/infrastructure/well_developed.jpg"
             width={300}
             height={300}
             alt=""

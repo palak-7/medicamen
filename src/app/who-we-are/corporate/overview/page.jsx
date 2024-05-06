@@ -110,7 +110,7 @@ const page = () => {
         <h1 className="font-bold text-2xl text-center pt-5 mb-4">
           Medicamen, an innovative way of thinking.
         </h1>
-        <div className="lg:w-1/2 mx-4">
+        <div className="mx-4">
           <h3 className="font-semibold text-lg text-center">
             At Medicamen, we are looking at new ways of thinking, new ways of
             working and new ways to touch people&apos;s lives.

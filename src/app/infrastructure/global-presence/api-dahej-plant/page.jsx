@@ -61,7 +61,7 @@ const page = () => {
       <div className="flex justify-center bg-secondary p-10 text-white">
         <div className="lg:flex">
           <Image
-            src="/infrastructure/well-developed.jpg"
+            src="/infrastructure/well_developed.jpg"
             width={300}
             height={300}
             alt=""

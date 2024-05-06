@@ -34,7 +34,7 @@ const page = () => {
             <div className="">
               <div className="flex justify-center">
                 <Image
-                  src="/product-and-therepy/therepy/Pain.png"
+                  src="/product-and-therepy/therepy/pain.png"
                   height={300}
                   width={300}
                   alt=""
