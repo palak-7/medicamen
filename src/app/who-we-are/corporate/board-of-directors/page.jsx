@@ -1,64 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { directors } from "./data";
+import Link from "next/link";
 const page = () => {
-  const directors = [
-    {
-      id: 1,
-      name: "RAHUL BISHNOI",
-      post: "Chairman",
-      img: "/directors/team-member-1.jpg",
-    },
-    {
-      id: 2,
-      name: "DR. VIMAL SHRAWAT",
-      post: "Director",
-      img: "/directors/team-member-3.png",
-    },
-    {
-      id: 3,
-      name: "ASHWANI KUMAR SHARMA",
-      post: "Director",
-      img: "/directors/team-member-4.jpg",
-    },
-    {
-      id: 4,
-      name: "HARISH PANDE",
-      post: "Indenpendent Director",
-      img: "/directors/team-member-11.jpg",
-    },
-    {
-      id: 5,
-      name: "SURESH KUMAR SINGH",
-      post: "Director",
-      img: "/directors/team-member-12.jpg",
-    },
-    {
-      id: 6,
-      name: "SANJAY BANSAL",
-      post: "Director",
-      img: "/directors/team-member-13.jpg",
-    },
-    {
-      id: 7,
-      name: "SANGEETA BISHNOI",
-      post: "Director",
-      img: "/directors/team-member-14.jpg",
-    },
-
-    {
-      id: 8,
-      name: "SUMITA DWEDI",
-      post: "Director",
-      img: "/directors/team-member-15.png",
-    },
-
-    {
-      id: 9,
-      name: "ARUN KUMAR",
-      post: "Director",
-      img: "/directors/team-member-30.jpg",
-    },
-  ];
   return (
     <div className="relative overflow-x-clip lg:mt-[200px] md:mt-[110px] sm:mt-[120px] mt-[250px]">
       <h1 className="text-3xl font-bold text-center mx-10 lg:mx-20">
@@ -67,9 +11,10 @@ const page = () => {
       </h1>
       <div className="grid lg:grid-cols-4 m-20 gap-4">
         {directors.map((d) => (
-          <div
+          <Link
+            href={`/who-we-are/corporate/board-of-directors/${d.id}`}
             key={d.id}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:scale-105"
           >
             <Image
               className="rounded-t-lg w-full"
@@ -84,7 +29,7 @@ const page = () => {
               </h5>
               <p className="mb-3 font-normal text-gray-700">{d.post}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

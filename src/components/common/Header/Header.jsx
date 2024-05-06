@@ -46,7 +46,6 @@ const Header = () => {
     }
   };
   const usePathName = usePathname();
-  console.log(usePathName);
   return (
     <div
       className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center  bg-gradient-to-r font-semibold from-white to-secondary ${
