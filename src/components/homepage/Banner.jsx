@@ -84,7 +84,7 @@ function Banner() {
 
               {index === currentSlide && (
                 <div
-                  className={`absolute lg:top-36 top-40 left-0 w-full h-full flex items-center lg:ml-[170px] ml-[15px] ${
+                  className={`absolute lg:top-36 top-40 left-0 w-full h-full flex items-center lg:ml-[185px] ml-[15px] ${
                     index === currentSlide
                       ? "animate__animated animate__slideInUp"
                       : ""

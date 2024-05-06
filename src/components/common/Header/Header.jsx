@@ -33,9 +33,9 @@ const Header = () => {
 
   const handleSubmenu = (index) => {
     if (openIndex === index) {
-      setOpenIndex(-1);
+      setOpenIndex(-1); // Close the submenu if it's already open
     } else {
-      setOpenIndex(index);
+      setOpenIndex(index); // Open the clicked submenu
     }
   };
   const handleSubSubmenu = (index) => {
@@ -46,6 +46,7 @@ const Header = () => {
     }
   };
   const usePathName = usePathname();
+  console.log(usePathName);
   return (
     <div
       className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center  bg-gradient-to-r font-semibold from-white to-secondary ${
@@ -125,7 +126,7 @@ const Header = () => {
                         ) : (
                           <>
                             <p
-                              onClick={() => handleSubmenu(index)}
+                              onClick={() => handleSubmenu(menuItem.id)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
@@ -141,24 +142,29 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                                openIndex === index ? "block" : "hidden"
+                              className={`submenu relative left-0 top-full lg:ml-0 ml-4 rounded-sm bg-white transition-[top] duration-300 lg:absolute lg:top-[110%] lg:w-[250px] lg:p-4 lg:shadow-lg ${
+                                openIndex == menuItem.id ? "block" : "hidden"
                               }`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
                                 <div key={index} className="group relative">
                                   {submenuItem.path ? (
                                     <Link
+                                      onClick={() =>
+                                        handleSubmenu(submenuItem.id)
+                                      }
                                       href={submenuItem.path}
                                       key={index}
-                                      className="block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3"
+                                      className={`block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3`}
                                     >
                                       {submenuItem.title}
                                     </Link>
                                   ) : (
                                     <>
                                       <p
-                                        onClick={() => handleSubSubmenu(index)}
+                                        onClick={() =>
+                                          handleSubSubmenu(submenuItem.id)
+                                        }
                                         className="rounded py-2.5 text-sm lg:px-3 flex cursor-pointer items-center justify-between text-dark hover:text-primary"
                                       >
                                         {submenuItem.title}
@@ -178,8 +184,8 @@ const Header = () => {
                                         </span>
                                       </p>
                                       <div
-                                        className={`lg:ml-[240px] lg:-mt-14 rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:w-[250px] lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                                          openSubIndex === index
+                                        className={`lg:ml-[240px] lg:-mt-6 rounded-sm ml-4 bg-white transition-[top] duration-300 lg:absolute lg:w-[250px] lg:shadow-lg ${
+                                          openSubIndex === submenuItem.id
                                             ? "block"
                                             : "hidden"
                                         }`}
@@ -187,6 +193,12 @@ const Header = () => {
                                         {submenuItem.submenu.map(
                                           (subsubmenuItem, index) => (
                                             <Link
+                                              onClick={() => {
+                                                handleSubSubmenu(
+                                                  submenuItem.id
+                                                );
+                                                handleSubmenu(menuItem.id);
+                                              }}
                                               href={subsubmenuItem.path}
                                               key={index}
                                               className="block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3"
