@@ -59,7 +59,7 @@ const Header = () => {
         <div className="">
           <div className="relative flex">
             {/*logo*/}
-            <div className="w-[300px] px-4 xl:mr-12">
+            <div className="lg:w-[300px] w-[340px] lg:px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -71,7 +71,7 @@ const Header = () => {
                   alt="logo"
                   width={200}
                   height={200}
-                  className="w-[200px] ml-4"
+                  className="w-[200px] ml-4 left-0"
                 />
               </Link>
             </div>

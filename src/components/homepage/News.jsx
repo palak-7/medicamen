@@ -29,7 +29,7 @@ const News = () => {
       <p className="text-center font-semibold font-serif mt-1">
         All our latest news are listed below
       </p>
-      <div className="grid grid-cols-3 gap-x-5 mx-4">
+      <div className="grid lg:grid-cols-3 gap-x-5 mx-4">
         {news.map((n) => (
           <div
             key={n.id}
