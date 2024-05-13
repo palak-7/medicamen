@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { IoMail } from "react-icons/io5";
 import { form } from "@/services/user";
 import { toast } from "react-toastify";
+
+import Link from "next/link";
 const Contact = () => {
   const router = useRouter();
 
@@ -66,7 +68,12 @@ const Contact = () => {
                         <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
                       </svg>
                     </div>
-                    <div className="ml-4 mb-4">
+
+                    <Link
+                      href="https://maps.app.goo.gl/vMc3NHctk6LpYFw78"
+                      target="__blank"
+                      className="ml-4 mb-4 hover:text-secondary"
+                    >
                       <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                         Our Address
                       </h3>
@@ -76,45 +83,59 @@ const Contact = () => {
                       <p className="text-gray-600">
                         New Delhi - 110019 (India)
                       </p>
-                    </div>
+                    </Link>
                   </li>
-                  <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-6 w-6"
-                      >
-                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-                        <path d="M15 7a2 2 0 0 1 2 2"></path>
-                        <path d="M15 3a6 6 0 0 1 6 6"></path>
-                      </svg>
-                    </div>
-                    <div className="ml-4 mb-4">
-                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
-                        Phone Number
-                      </h3>
-                      <p className="text-gray-600">+91-11-47589500</p>
-                    </div>
-                  </li>
-                  <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                      <IoMail />
-                    </div>
-                    <div className="ml-4 mb-4">
-                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
-                        Email Address
-                      </h3>
-                      <p className="text-gray-600">info@medicamen.com</p>
-                    </div>
-                  </li>
+
+                  <Link
+                    href="tel:+91-11-47589500"
+                    className="hover:text-secondary"
+                    target="__blank"
+                  >
+                    <li className="flex">
+                      <div className="hover:text-secondary flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="h-6 w-6"
+                        >
+                          <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                          <path d="M15 7a2 2 0 0 1 2 2"></path>
+                          <path d="M15 3a6 6 0 0 1 6 6"></path>
+                        </svg>
+                      </div>
+
+                      <div className="ml-4 mb-4">
+                        <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
+                          Phone Number
+                        </h3>
+                        <p className="text-gray-600">+91-11-47589500</p>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link
+                    href="mailto:info@medicamen.com"
+                    className="hover:text-secondary"
+                    target="__blank"
+                  >
+                    <li className="flex">
+                      <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                        <IoMail />
+                      </div>
+                      <div className="ml-4 mb-4">
+                        <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
+                          Email Address
+                        </h3>
+                        <p className="text-gray-600">info@medicamen.com</p>
+                      </div>
+                    </li>
+                  </Link>
                 </ul>
               </div>
               <div className="card h-fit max-w-6xl md:px-12" id="form">
