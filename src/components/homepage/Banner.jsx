@@ -8,6 +8,7 @@ import Image from "next/image";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
+import Link from "next/link";
 function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -90,16 +91,20 @@ function Banner() {
                       : ""
                   }`}
                 >
-                  <button
-                    className={`p-3 shadow-2xl bg-primary font-semibold text-white`}
-                  >
-                    Read More
-                  </button>
-                  <button
-                    className={`ml-2 p-3 shadow-2xl bg-primary font-semibold text-white`}
-                  >
-                    Contact Us
-                  </button>
+                  <Link href="/who-we-are/corporate/key-milestones">
+                    <button
+                      className={`p-3 shadow-2xl bg-primary font-semibold text-white`}
+                    >
+                      Read More
+                    </button>
+                  </Link>
+                  <Link href="/contact">
+                    <button
+                      className={`ml-2 p-3 shadow-2xl bg-primary font-semibold text-white`}
+                    >
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               )}
             </div>

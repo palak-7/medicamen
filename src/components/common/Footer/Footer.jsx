@@ -117,7 +117,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="hover:text-secondary">
-                    <Link href="/product-and-therepy/product/cardiolog">
+                    <Link href="/product-and-therepy/product/cardiology">
                       Cardiology
                     </Link>
                   </li>
