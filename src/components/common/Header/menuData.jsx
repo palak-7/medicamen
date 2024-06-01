@@ -316,5 +316,11 @@ const menuData = [
     newTab: false,
     path: "/contact",
   },
+  {
+    id: 9,
+    title: "Lifesciences",
+    newTab: false,
+    path: "https://lifesciences.tekbooster.com/",
+  },
 ];
 export default menuData;

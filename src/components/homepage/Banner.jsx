@@ -62,7 +62,7 @@ function Banner() {
                 height={100}
                 src={d.img}
                 alt="slider-image"
-                className="lg:w-full lg:h-full h-[500px]"
+                className="lg:w-full lg:h-full h-[500px] object-cover"
               />
               {index === currentSlide && (
                 <div
