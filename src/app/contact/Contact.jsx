@@ -78,7 +78,7 @@ const Contact = () => {
                         Our Address
                       </h3>
                       <p className="text-gray-600">
-                        506, Chiranjiv Tower, 43 Nehru Place,
+                        1506, Chiranjiv Tower, 43 Nehru Place,
                       </p>
                       <p className="text-gray-600">
                         New Delhi - 110019 (India)

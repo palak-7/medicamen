@@ -21,7 +21,7 @@ const VideoSection = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/CPOoPYO_OVM?si=otKdVNZYbdPp2a2Y"
+            src="https://youtu.be/50qq4NBnj7Q?si=_kG8ksDFpB8N5CNQ"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
