@@ -69,7 +69,7 @@ const Testimonial = () => {
                     className="mb-4"
                   />
                   <h1 className="text-xl font-semibold line-clamp-1 mt-2">
-                    {d.name}
+                    Name
                   </h1>
                   <h1 className="text-md line-clamp-1">{d.designstion}</h1>
                   <p className="text-gray-700 line-clamp-5 text-center">

@@ -21,9 +21,9 @@ const page = ({ params }) => {
         </div>
         <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
           <h1 className=" font-bold text-3xl">{obj.name}</h1>
-          {/* <p className="text-gray-700 mb-8">- {obj.post}</p> */}
+          <p className="text-gray-700 mb-8">- {obj.post}</p>
 
-          <p className=" w-full mb-10 mt-4">{obj.content}</p>
+          <p className=" w-full mb-10">{obj.content}</p>
         </div>
       </div>
     </div>

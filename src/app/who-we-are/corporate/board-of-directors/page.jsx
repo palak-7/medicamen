@@ -27,7 +27,7 @@ const page = () => {
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                 {d.name}
               </h5>
-              {/* <p className="mb-3 font-normal text-gray-700">{d.post}</p> */}
+              <p className="mb-3 font-normal text-gray-700">{d.post}</p>
             </div>
           </Link>
         ))}

@@ -20,10 +20,10 @@ const page = () => {
               width={280}
               height={200}
             />
-            <div className="flex flex-col leading-normal">
+            <div className="flex flex-col justify-between leading-normal">
               <div className="bg-primary text-center p-2">
                 <h5 className="text-white text-2xl font-bold ">{l.name}</h5>
-                {/* <p className="text-white mb-2">{l.post}</p> */}
+                <p className="text-white mb-2">{l.post}</p>
               </div>
               <p className="mb-3 mt-4 font-normal text-gray-700 line-clamp-6 px-3">
                 {l.content}
