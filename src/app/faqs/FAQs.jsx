@@ -11,6 +11,7 @@ const FAQs = () => {
         width={1000}
         height={200}
         className="w-full lg:h-[300px]"
+        alt="faq"
       />
       <div className="lg:mx-10 mx-2 my-4 border-t">
         <Accordion transition transitionTimeout={200}>
@@ -69,7 +70,9 @@ const AccordionItem = ({ header, ...rest }) => (
     header={({ state: { isEnter } }) => (
       <>
         {header}
-        <img
+        <Image
+          width={100}
+          height={100}
           className={`ml-auto transition-transform duration-200 ease-out ${
             isEnter && "rotate-180"
           }`}

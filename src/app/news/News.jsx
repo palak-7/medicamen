@@ -44,6 +44,7 @@ const News = () => {
       <div className="grid lg:grid-cols-3 gap-x-5 mx-4 lg:mx-20">
         {uniqueYearObjects.map((y) => (
           <Link
+            key={y}
             href={`/news/${y}`}
             className="bg-primary text-white p-5 rounded-lg border-2 border-black text-center text-2xl hover:scale-105 hover:shadow-lg"
           >
