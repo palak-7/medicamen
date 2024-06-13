@@ -53,7 +53,7 @@ const DetailedNews = ({ id }) => {
             <p className="flex text-gray-500 mt-2">
               <SlCalender className="mt-1 text-primary mr-1" />
               Date:{" "}
-              <Moment format="YYYY/MM/DD" className="ml-2">
+              <Moment format="MMMM D, YYYY" className="ml-2">
                 {obj?.date}
               </Moment>
             </p>
