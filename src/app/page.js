@@ -15,7 +15,7 @@ const page = () => {
       <Numbers />
       <Offering />
       <Testimonial />
-      <News />
+      {/* <News /> */}
       <ChairmanWords />
     </div>
   );
