@@ -1,7 +1,36 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { cancerCare } from "../product";
+
 const CancerCare = () => {
+  const [filter, setFilter] = useState("all");
+  const [updated, setUpdated] = useState(cancerCare);
+
+  const allClicked = () => {
+    setFilter("all");
+    setUpdated(cancerCare);
+  };
+
+  const oralClicked = () => {
+    setFilter("oral");
+    setUpdated(cancerCare.filter((item) => item.cat === "oral"));
+  };
+  const hemaClicked = () => {
+    setFilter("hematology");
+    setUpdated(cancerCare.filter((item) => item.cat2 === "hematology"));
+  };
+  const solidClicked = () => {
+    setFilter("solid");
+    setUpdated(cancerCare.filter((item) => item.cat2 === "solid"));
+  };
+
+  const injectablesClicked = () => {
+    setFilter("injectables");
+    setUpdated(cancerCare.filter((item) => item.cat === "inject"));
+  };
+
   return (
     <div className="overflow-x-clip lg:mt-[170px] md:mt-[110px] sm:mt-[120px] mt-[220px]">
       <h1 className="text-3xl font-bold text-center mb-2">Cancer Care</h1>
@@ -184,39 +213,83 @@ const CancerCare = () => {
       </div>
 
       <h1 className="text-3xl font-bold text-center my-5 mb-5">Our Products</h1>
-      <div class="mx-10 relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <div className="flex justify-center">
+        <div className="col-span-2 flex">
+          <button
+            onClick={allClicked}
+            className={`bg-primary hover:bg-primary/90 hover:scale-105 text-white rounded-2xl px-3 py-1 m-3 ${
+              filter === "all" && "border-green-300 border-4"
+            }`}
+          >
+            All
+          </button>
+          <button
+            onClick={injectablesClicked}
+            className={`bg-primary hover:bg-primary/90 hover:scale-105 text-white rounded-2xl px-3 py-1 m-3 ${
+              filter === "injectables" && "border-green-300 border-4"
+            }`}
+          >
+            Injectables
+          </button>
+          <button
+            onClick={oralClicked}
+            className={`bg-primary hover:bg-primary/90 hover:scale-105 text-white rounded-2xl px-3 py-1 m-3 ${
+              filter === "oral" && "border-green-300 border-4"
+            }`}
+          >
+            Oral
+          </button>
+          <button
+            onClick={hemaClicked}
+            className={`bg-primary hover:bg-primary/90 hover:scale-105 text-white rounded-2xl px-3 py-1 m-3 ${
+              filter === "hematology" && "border-green-300 border-4"
+            }`}
+          >
+            Hematology
+          </button>
+          <button
+            onClick={solidClicked}
+            className={`bg-primary hover:bg-primary/90 hover:scale-105 text-white rounded-2xl px-3 py-1 m-3 ${
+              filter === "solid" && "border-green-300 border-4"
+            }`}
+          >
+            Solid Tumors
+          </button>
+        </div>
+      </div>
+      <div className="mx-10 relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 SNo.
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Brand Name
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Generic
               </th>
-              <th scope="col" class="px-6 py-3">
-                packing
+              <th scope="col" className="px-6 py-3">
+                Packing
               </th>
             </tr>
           </thead>
           <tbody>
-            {cancerCare.map((c) => (
+            {updated.map((c, index) => (
               <tr
                 key={c.SNo}
                 className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                 >
-                  {c.SNo}
+                  {index + 1}
                 </th>
-                <td class="px-6 py-4">{c.BrandName}</td>
-                <td class="px-6 py-4">{c.Generic}</td>
-                <td class="px-6 py-4">{c.Packing}</td>
+                <td className="px-6 py-4">{c.BrandName}</td>
+                <td className="px-6 py-4">{c.Generic}</td>
+                <td className="px-6 py-4">{c.Packing}</td>
               </tr>
             ))}
           </tbody>
@@ -227,17 +300,3 @@ const CancerCare = () => {
 };
 
 export default CancerCare;
-{
-  /* <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                1
-              </th>
-              <td class="px-6 py-4">Oncology</td>
-              <td class="px-6 py-4">Abiraterone acetate </td>
-              <td class="px-6 py-4">250mg</td>
-              <td class="px-6 py-4"></td>
-            </tr> */
-}
