@@ -112,11 +112,11 @@ const Footer = () => {
               <div className="flex gap-6 xl:gap-12 max-xl:justify-center">
                 <ul className="text-gray-600 transition-all duration-500 grid gap-6">
                   <li className="hover:text-secondary">
-                    <Link href="/product-and-therepy/product/cancer-care">
+                    <Link href="/product-and-therepy/cancer-care">
                       Cancer Care
                     </Link>
                   </li>
-                  <li className="hover:text-secondary">
+                  {/* <li className="hover:text-secondary">
                     <Link href="/product-and-therepy/product/cardiology">
                       Cardiology
                     </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
                     <Link href="/product-and-therepy/product/pain-management">
                       Pain Management
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

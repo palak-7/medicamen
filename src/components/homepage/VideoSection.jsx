@@ -31,6 +31,33 @@ const VideoSection = () => {
           ></iframe>
         </div>
       </div>
+      <div className="lg:grid lg:grid-cols-4">
+        <div className="pl-10 pb-10">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CPOoPYO_OVM?si=m-WFmBeALNFptQ-n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className=" col-start-3 col-span-2">
+          <h1 className="text-4xl">MEDICAMEN BIOTECH LIMITED</h1>
+          <p className="text-4xl font-bold uppercase">
+            has constantly strived to be on the path of growth
+          </p>
+          <p>
+            on the strength of its brilliant human resource, world class
+            facilities and a global vision of its Management.From being a purely
+            Formulation manufacturer of general products, the Company has
+            diversified into setting up a state-of-the-art R&D Centre followed
+            by a most modern API manufacturing facility.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

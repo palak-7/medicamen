@@ -29,8 +29,8 @@ const page = () => {
             towards providing high quality, yet affordable, healthcare to
             patients world over. We also perceive opportunities for introducing
             quality medicines, in both Oncology & Non-Oncology categories, into
-            highly regulated markets of EU, US, Japan, Australia etcetera to
-            enable them reduce their healthcare costs.
+            highly regulated markets of EU, US, Japan, Australia etc. to enable
+            them reduce their healthcare costs.
           </div>
           <br />
           <div>

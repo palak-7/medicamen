@@ -97,7 +97,7 @@ const page = () => {
         <div className="flex justify-center lg:mx-20 mx-4 mt-10">
           <div className="lg:flex">
             <Image
-              src="/chronology/sign1.png"
+              src="/chronology/sign3.png"
               width={200}
               height={300}
               alt=""
@@ -124,10 +124,6 @@ const page = () => {
               <div>
                 <div>&#8226;2020</div>
                 <p>Global API Facility started– Dahej API Plant</p>
-              </div>
-              <div>
-                <div>&#8226;2000</div>
-                <p>ISO certification – Bhiwadi FDF Plant</p>
               </div>
             </div>
           </div>
