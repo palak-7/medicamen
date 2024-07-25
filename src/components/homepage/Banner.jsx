@@ -36,7 +36,7 @@ function Banner() {
 
   const data = [
     {
-      name: `Transforming Lives...\nThrough Therepy`,
+      name: `Transforming Lives...\nThrough Therapy`,
       subheading:
         "Transforming lives of people through quality and innovative healthcare solutions to ensure accessibility to more people.",
       img: "/slider/slider-1.jpg",
