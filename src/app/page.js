@@ -14,7 +14,7 @@ const page = () => {
       <VideoSection />
       <Numbers />
       <Offering />
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <News /> */}
       <ChairmanWords />
     </div>
