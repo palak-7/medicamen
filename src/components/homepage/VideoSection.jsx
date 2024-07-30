@@ -31,7 +31,7 @@ const VideoSection = () => {
           ></iframe>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-4">
+      {/* <div className="lg:grid lg:grid-cols-4">
         <div className="pl-10 pb-10">
           <iframe
             width="560"
@@ -57,7 +57,7 @@ const VideoSection = () => {
             by a most modern API manufacturing facility.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
